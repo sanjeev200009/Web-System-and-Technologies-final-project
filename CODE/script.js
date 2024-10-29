@@ -51,6 +51,9 @@ triggerOpenButtons.forEach((triggerOpenButton) => {
 });
 
 
+
+
+
 //mobile-menu submenu
 const submenu = document.querySelectorAll('.child-trigger');
 
@@ -68,6 +71,34 @@ submenu.forEach((menu) => {
   });
 })
 
+//tabbed
+const triggers = document.querySelectorAll('.tabbed-trigger');
+const contents = document.querySelectorAll('.tabbed > div');
+
+triggers.forEach((trigger) => {
+  trigger.addEventListener('click', function () {
+    // Get the data-id of the clicked tab
+    const dataTarget = this.dataset.id;
+
+    // Remove active class from all triggers and contents
+    triggers.forEach((btn) => {
+      btn.parentNode.classList.remove('active');
+    });
+    
+    contents.forEach((content) => {
+      content.classList.remove('active');
+    });
+
+    // Add active class to the clicked trigger and corresponding content
+    this.parentNode.classList.add('active');
+    const activeContent = document.querySelector(`#${dataTarget}`);
+    if (activeContent) {
+      activeContent.classList.add('active');
+    }
+  });
+});
+
+//slider
 const swiper = new Swiper('.sliderbox', {
   
   loop: true,
@@ -119,3 +150,20 @@ const carousel = new Swiper('.carouselbox', {
     }
   }
 });
+
+//sorter
+const sorter = document.querySelector('.sort-list');
+if (sorter) {
+  const sortLi = sorter.querySelectorAll('li'); // select all 'li' elements
+  sorter.querySelector('.opt-trigger').addEventListener('click', function() {
+    sorter.querySelector('ul').classList.toggle('show');
+  });
+
+  sortLi.forEach(item => item.addEventListener('click', function() {
+    sortLi.forEach(li => li !== this ? li.classList.remove('active') : null);
+    this.classList.add('active');
+    sorter.querySelector('.opt-trigger span.value').textContent = this.textContent;
+    sorter.querySelector('ul').classList.toggle('show');
+  }));
+}
+

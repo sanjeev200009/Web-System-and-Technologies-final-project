@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Dell Inspiron Laptop",
+        "price": 200,
+        "image": "../ASSETES/IMG/SINGLEPC/91b363e6-de48-40f5-b4cd-b1aaf0cfdbec.jpg"
+    },
+    {
+        "id": 2,
+        "name": "HP Pavilion Desktop",
+        "price": 250,
+        "image": "../ASSETES/IMG/SINGLEPC/bae53c19-92a3-4227-bfdd-50893dd6d934.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Acer Aspire Monitor",
+        "price": 290,
+        "image": "../ASSETES/IMG/SINGLEPC/c9e100cb-9265-43f6-9142-ba4e46f4c003.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Lenovo ThinkPad Laptop",
+        "price": 200,
+        "image": "../ASSETES/IMG/SINGLEPC/laptop92824(04).jpg"
+    },
+    {
+        "id": 5,
+        "name": "Asus ROG Gaming Desktop",
+        "price": 300,
+        "image": "../ASSETES/IMG/SINGLEPC/c9e100cb-9265-43f6-9142-ba4e46f4c003.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Samsung Odyssey Monitor",
+        "price": 200,
+        "image": "../ASSETES/IMG/SINGLEPC/c9e100cb-9265-43f6-9142-ba4e46f4c003.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Apple MacBook Air",
+        "price": 200,
+        "image": "../ASSETES/IMG/SINGLEPC/91b363e6-de48-40f5-b4cd-b1aaf0cfdbec.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Alienware Aurora Gaming PC",
+        "price": 200,
+        "image": "../ASSETES/IMG/SINGLEPC/c9e100cb-9265-43f6-9142-ba4e46f4c003.jpg"
+    }
+]
